@@ -95,7 +95,7 @@ then
 	get_architecture
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$final_path" --source_id="app.$architecture"
+	ynh_setup_source --dest_dir="$final_path" --source_id="app.$architecture" --full_replace=1
 fi
 
 chmod 750 "$final_path"
